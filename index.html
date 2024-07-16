@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" type="image/x-icon" href="cropped-favicon-2.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <aside>
+        <div class="side-bar bg-black">
+            <div class="nav-items m-4">
+                <div class="nav-item text-white fs-6 my-2" id="searchBtn">Search</div>
+                <div class="nav-item text-white fs-6 my-2" id="catgeoryBtn">Catgeory</div>
+                <div class="nav-item text-white fs-6 my-2" id="areaBtn">Area</div>
+                <div class="nav-item text-white fs-6 my-2" id="IngreiantsBtn">Ingreiants</div>
+                <div class="nav-item text-white fs-6 my-2" id="contactBtn">Contact Us</div>
+            </div>
+            <div class="nav-footer m-4">
+                <div class="footer-icons text-white d-flex mb-2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter mx-1"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <span class=" text-white">Copyright Â <i class="fa-regular fa-copyright"></i> 2019 All Rights <br>
+                    Reserved.</span>
+            </div>
+        </div>
+        <div class="setting d-flex flex-column justify-content-between align-items-center py-3">
+            <img src="images.jpeg" alt="coock" width="60" height="60" class="rounded-circle">
+            <i class="fa-solid fa-bars fa-2x" id="side-bar-open"></i>
+            <i class="fa-solid fa-xmark fa-2x" id="side-bar-close"></i>
+            <div class="icons d-flex flex-column">
+                <i class="fa-solid fa-globe my-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </aside>
+    <!--search form-->
+    <div class="container w-75">
+        <form action="">
+            <div class="row py-4 form-row">
+                <div class="col-md-6 ">
+                    <input class="form-control" id="nameInput" type="text" placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                    <input maxlength="1" class="form-control" id="letterInput" type="text" placeholder="Search By First Letter">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--categories row-->
+    <div class="meals">
+        <div class="container">
+            <div class="row py-5 g-4" id="categoriesRow">
+                
+            </div>
+        </div>
+    </div>
+    <!--show meals-->
+    <div class="meals">
+        <div class="container">
+            <div class="row py-5 g-4" id="rowData">
+                
+            </div>
+        </div>
+    </div>
+    <!--show meals data-->
+    <section class="" id="oneMeal">
+        <div class="container text-white my-5 position-relative">
+            <i class="fas fa-close position-absolute end-0 top-0" id="closeMeal"></i>
+            <div class="row g-4">
+                <div class="col-md-4 p-2">
+                    <img src="https://www.themealdb.com/images/media/meals/4pqimk1683207418.jpg" alt="meal image" class="mealImage w-100 rounded-2">
+                    <h2 class="mealName my-2">meal</h2>
+                </div>
+                <div class="col-md-8">
+                    <h3>Instructions</h3>
+                    <p class="mealInsructions">Lorem ipsum dolor sit amet.</p>
+                    <div class="d-flex align-items-center mb-2 ms-2">
+                        <h2>Area : </h2>
+                        <h2 class="ms-2 mealArea"></h2>
+                    </div>
+                    <div class="d-flex align-items-center mb-2 ms-2">
+                        <h2>Catgeory : </h2>
+                        <h2 class="ms-2 mealCatgeory"></h2>
+                    </div>
+                    <div class="d-flex mb-2 ms-2 flex-column">
+                        <h2>Recipes : </h2>
+                        <div class="mealRecipes d-flex flex-wrap p-2">
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                            <div class="recipe btn btn-secondary m-1">melas</div>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 ms-2 flex-column">
+                        <h2>Tags : </h2>
+                        <div class="p-2">
+                            <div class="mealTags btn btn-warning">melas</div>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 ms-2">
+                        <a href="" class="btn btn-success me-1 sourceBtn" target="_blank" >Source</a>
+                        <a href="" class="btn btn-danger youtubeBtn" target="_blank">Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact form-->
+    <section class="contact-page my-5">
+        <div class="container w-75">
+            <form onsubmit="return validateForm()">
+                <div class="form-group d-flex flex-column flex-md-row">
+                    <input class="form-control d-block my-3 mx-2" type="text" id="name" name="name" required placeholder="Enter Your Name">
+                    <input class="form-control d-block my-3 mx-2" type="email" id="email" name="email" required placeholder="Enter Your Email">
+                </div>
+                <div class="form-group d-flex flex-column flex-md-row">
+                    <input class="form-control d-block my-3 mx-2" type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="Enter Your Phone number"> <span id="phoneError" class="error"></span>
+                    <input class="form-control d-block my-3 mx-2" type="number" id="age" name="age" min="18" required placeholder="Enter Your Age"> <span id="ageError" class="error"></span>
+                </div>
+                <div class="form-group d-flex flex-column flex-md-row">
+                    <input class="form-control d-block my-3 mx-2" type="password" id="password" name="password" required placeholder="Enter Your password">
+                    <input class="form-control d-block my-3 mx-2" type="password" id="confirmPassword" name="confirmPassword" required placeholder="confirm your Password">
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-outline-success ms-2 mt-5">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="loading">
+        <span class="loader"></span>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

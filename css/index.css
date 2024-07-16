@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+}
+aside{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -262.708px;
+    bottom: 0;
+    z-index: 9999;
+}
+i{
+    cursor: pointer;
+}
+.side-bar{
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#side-bar-close{
+    display: none;
+}
+.side-bar .nav-item{
+    display: none;
+    cursor: pointer;
+}
+.setting{
+    background-color: #fff;
+}
+.nav-items{
+    display: flex;
+    flex-direction: column;
+}
+.meal-overlay{
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+.meal-data{
+    cursor: pointer;
+}
+.meal-data:hover .meal-overlay{
+    top: 0;
+}
+#oneMeal{
+    display: none;
+}
+#categoriesRow{
+    display: none;
+}
+.form-row{
+    display: none;
+}
+.meal-overlay p{
+    overflow: hidden;
+}
+.area{
+    cursor: pointer;
+    color: #fff;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.area:hover{
+    color: black;
+    background-color: #fff;
+}
+.ingrediant{
+    cursor: pointer;
+    color: #fff;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.ingrediant:hover{
+    color: black;
+    background-color: #fff;
+}
+.ingrediant p{
+    height: 100px;
+    overflow: hidden;
+}
+.contact-page{
+    display: none;
+}
+.form-group input{
+    width: 50%;
+}
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  #loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #123056;
+    z-index: 9999;
+  }
+
+@media (max-width : 768px) {
+    .form-group input{
+        width: 100%;
+    }
+}
